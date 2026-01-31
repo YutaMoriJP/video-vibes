@@ -1,0 +1,14 @@
+{
+  "name": "video-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "pnpm": {
+    "workspace": true
+  },
+  "scripts": {
+    "dev:video": "pnpm --filter @video-player/core dev",
+    "dev:playground": "pnpm --filter @video-player/playground dev",
+    "build:video": "pnpm --filter @video-player/core build",
+    "build:playground": "pnpm --filter @video-player/playground build"
+  }
+}

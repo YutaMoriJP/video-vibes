@@ -1,0 +1,25 @@
+export declare function useVideoControl(id: string | number): {
+    currentTime: any;
+    duration: any;
+    paused: any;
+    muted: any;
+    volume: any;
+    videoStatus: any;
+    buffered: any;
+    playbackRate: any;
+    isFullscreen: any;
+    isPictureInPicture: any;
+    error: any;
+    play: () => void;
+    pause: () => void;
+    togglePlay: () => void;
+    setCurrentTime: (time: number) => void;
+    seek: (time: number) => void;
+    setMuted: (muted: boolean) => void;
+    toggleMute: () => void;
+    setVolume: (volume: number) => void;
+    setPlaybackRate: (rate: number) => void;
+    toggleFullscreen: (element: HTMLElement) => Promise<void>;
+    togglePictureInPicture: (video: HTMLVideoElement) => Promise<void>;
+    reset: () => void;
+};

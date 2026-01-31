@@ -1,0 +1,160 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  padding: 24px 32px;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-bottom: 1px solid #334155;
+}
+
+.app-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 8px;
+}
+
+.app-header p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.app-main {
+  display: flex;
+  flex: 1;
+  gap: 24px;
+  padding: 24px 32px;
+}
+
+.app-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.player-list {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.player-list h3 {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.player-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 4px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 14px;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.player-tab:hover {
+  background: #334155;
+  color: #e2e8f0;
+}
+
+.player-tab.active {
+  background: #3b82f6;
+  color: white;
+}
+
+.remove-player {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.remove-player:hover {
+  opacity: 1;
+}
+
+.add-player {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 8px;
+  border: 1px dashed #475569;
+  background: transparent;
+  color: #64748b;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-player:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+  align-items: center;
+}
+
+.players-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.player-wrapper {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.player-wrapper:hover {
+  border-color: #334155;
+}
+
+.player-wrapper.selected {
+  border-color: #3b82f6;
+}
+
+.player-label {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #e2e8f0;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #334155;
+}
